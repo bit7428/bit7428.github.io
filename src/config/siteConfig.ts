@@ -7,7 +7,7 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "Citlali@Official's Blog",
+	title: "Citlali's Blog",
 
 	// 站点副标题
 	subtitle: "茜特菈莉的小窝",
