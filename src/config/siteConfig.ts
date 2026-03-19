@@ -17,15 +17,16 @@ export const siteConfig: SiteConfig = {
 
 	// 站点描述
 	description:
-		"就算明天没的吃，今天也要吃蛋糕！",
+		"如果茜特菈莉还没准备好的话，就先让我来记住茜特菈莉吧。",
 
 	// 站点关键词
 	keywords: [
-		"Citlali",
+		"是你奶奶",
 		"茜特菈莉",
 		"老酸奶",
 		"Genshin Inpact",
 		"mihoyo",
+		"Citlali",
 	],
 
 	// 主题色
@@ -57,9 +58,9 @@ export const siteConfig: SiteConfig = {
 			// 图标文件路径
 			src: "/favicon/favicon.ico",
 			// 可选，指定主题 'light' | 'dark'
-			// theme: "light",
+			theme: "light",
 			// 可选，图标大小
-			// sizes: "32x32",
+			sizes: "128x128",
 		},
 	],
 
@@ -77,7 +78,7 @@ export const siteConfig: SiteConfig = {
 			alt: "🍀",
 		},
 		// 导航栏标题
-		title: "Citlali",
+		title: "Citlali is Best！",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 		// 导航菜单对齐方式，left：左对齐，center：居中
