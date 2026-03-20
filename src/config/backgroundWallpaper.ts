@@ -1,4 +1,5 @@
 import type { BackgroundWallpaperConfig } from "@/types/config";
+import type { FontFamilySchema } from "node_modules/astro/dist/assets/fonts/config";
 
 export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 壁纸模式："banner" 横幅壁纸，"overlay" 全屏透明，"none" 纯色背景无壁纸
@@ -106,15 +107,15 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		credit: {
 			enable: {
 				// 桌面端显示横幅图片来源文本
-				desktop: true,
+				desktop: false,
 				// 移动端显示横幅图片来源文本
-				mobile: true,
+				mobile: false,
 			},
 			text: {
 				// 桌面端要显示的来源文本
-				desktop: "留影叙佳期的诸位老师",
+				desktop: "",
 				// 移动端要显示的来源文本
-				mobile: "Pixiv - KiraraShss",
+				mobile: "",
 			},
 			url: {
 				// 桌面端原始艺术品或艺术家页面的 URL 链接
