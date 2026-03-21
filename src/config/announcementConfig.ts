@@ -5,7 +5,7 @@ export const announcementConfig: AnnouncementConfig = {
 	title: "小窝门口的声明",
 
 	// 公告内容
-	content: "(如果你也喜欢茜特菈莉那么)欢迎来到我的博客！目前还在建设中，可怜的老酸奶要暂时和流萤挤一个被窝了~",
+	content: "(如果你也喜欢茜特菈莉那么)欢迎来到我的博客！基本完工了喵，目前所有的链接都指向主题原作者和文档，如果你喜欢这个主题，一定要支持原作者喵",
 
 	// 是否允许用户关闭公告
 	closable: true,
