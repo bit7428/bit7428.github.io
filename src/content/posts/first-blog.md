@@ -1,12 +1,13 @@
 ---
-title: PYTHON入门笔记
+title: Python基础语法
 published: 2026-03-22
-description: 第一篇文章，写点基础的东西吧（好基础啊喂）
-tags: [你好世界]
-category: [你好世界]
-draft: false
+description: '记录了一些我不太熟悉的基础知识，不太适合学习，主要起到一个提示作用'
+image: ''
+tags: [Hello-World]
+category: '基础入门'
+draft: false 
+lang: ''
 ---
-
 # PYTHON
 
 跟着菜鸟教程学的
