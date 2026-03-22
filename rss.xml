@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Citlali@Official&apos;s Blog</title><description>茜特菈莉的小窝</description><link>https://firefly.cuteleaf.cn/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.8.1</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年3月22日 17:48:58</lastBuildDate><item><title>Python基础语法</title><link>https://firefly.cuteleaf.cn/posts/first-blog/</link><guid isPermaLink="true">https://firefly.cuteleaf.cn/posts/first-blog/</guid><description>记录了一些我不太熟悉的基础知识，不太适合学习，主要起到一个提示作用</description><pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;PYTHON&lt;a href=&quot;#python&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;跟着菜鸟教程学的&lt;/p&gt;&lt;section&gt;&lt;h2&gt;基础语法&lt;a href=&quot;#基础语法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Citlali@Official&apos;s Blog</title><description>茜特菈莉的小窝</description><link>https://firefly.cuteleaf.cn/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.8.1</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年3月22日 22:54:47</lastBuildDate><item><title>Python基础语法</title><link>https://firefly.cuteleaf.cn/posts/first-blog/</link><guid isPermaLink="true">https://firefly.cuteleaf.cn/posts/first-blog/</guid><description>记录了一些我不太熟悉的基础知识，不太适合学习，主要起到一个提示作用</description><pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;PYTHON 入门笔记&lt;a href=&quot;#python-入门笔记&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;跟着菜鸟教程学的&lt;/p&gt;&lt;section&gt;&lt;h2&gt;基础语法&lt;a href=&quot;#基础语法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;默认情况下Python的编码时 UTF-8 可以改&lt;/li&gt;
 &lt;li&gt;单行注释# 多行注释&quot;&quot;&quot; &quot;&quot;&quot;&lt;/li&gt;
 &lt;li&gt;缩进只能用空格不准用 Tab，且同一代码块的缩进相同&lt;/li&gt;
@@ -37,59 +37,143 @@
 &lt;/ol&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;数据类型转换&lt;a href=&quot;#数据类型转换&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;隐式数据类型转换方向主要依据精度来定&lt;/li&gt;
 &lt;li&gt;显式数据类型转换需要依靠类型函数实现&lt;/li&gt;
-&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;类型转换函数&lt;a href=&quot;#类型转换函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;int(x,base=10) float(x) complex(real, imag)
-str(x) repr(x) eval(str) tuple(seq) list(seq)
-set() dict()
-frozenset() 不可变集合 chr() 字符
-ord() 十 hex() 十六 oct() 八&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;数字NUMBER&lt;a href=&quot;#数字number&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;import math（math.略）&lt;a href=&quot;#import-mathmath略&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;abs(i) fabs(f) pow(x,y) exp(x) round(x,n)
-max() min() log(x,a = e) log10(x) sqrt()
-modf(f) = 整数:小数 floor(x)向下取整 ceil(x)向上取整&lt;/p&gt;&lt;p&gt;acos() asin() atan() sin() cos() tan()
-degree() 弧度换角度 radians() 角度换弧度
-hypot(x,y) = sqrt(x² + y²)&lt;/p&gt;&lt;p&gt;pi e&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;import random（random.略）&lt;a href=&quot;#import-randomrandom略&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;random() [0,1) uniform(x,y) [x,y] seed()
-shuffle(seq) 随机排序原序列
-choice(seq) 从序列中随机挑选一个元素
-randrange(start,stop,step) 在范围内获取一个随机数&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;字符串STRING&lt;a href=&quot;#字符串string-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;类型转换函数&lt;a href=&quot;#类型转换函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;int(x,base=10) float(x) complex(real, imag)&lt;/li&gt;
+&lt;li&gt;str(x) repr(x) eval(str) tuple(seq) list(seq)&lt;/li&gt;
+&lt;li&gt;set() dict()&lt;/li&gt;
+&lt;li&gt;frozenset() 不可变集合 chr() 字符&lt;/li&gt;
+&lt;li&gt;ord() 十 hex() 十六 oct() 八&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;数字NUMBER&lt;a href=&quot;#数字number&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;import math（math.略）&lt;a href=&quot;#import-mathmath略&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;abs(i) fabs(f) pow(x,y) exp(x) round(x,n)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;max() min() log(x,a = e) log10(x) sqrt()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;modf(f) = 整数:小数 floor(x)向下取整 ceil(x)向上取整&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;acos() asin() atan() sin() cos() tan()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;degree() 弧度换角度 radians() 角度换弧度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hypot(x,y) = sqrt(x² + y²)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pi e 两个特殊值，也要加 math. 前缀&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;import random（random.略）&lt;a href=&quot;#import-randomrandom略&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;random() [0,1) uniform(x,y) [x,y] seed()&lt;/li&gt;
+&lt;li&gt;shuffle(seq) 随机排序原序列&lt;/li&gt;
+&lt;li&gt;choice(seq) 从序列中随机挑选一个元素&lt;/li&gt;
+&lt;li&gt;randrange(start,stop,step) 在范围内获取一个随机数&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;字符串STRING&lt;a href=&quot;#字符串string-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;\n 换行 \t 制表符 \r 回车 \ ’ ”&lt;/li&gt;
 &lt;li&gt;用 f-string 格式化输出就好了&lt;/li&gt;
 &lt;li&gt;字符串允许使用&apos;&apos;&apos; &apos;&apos;&apos;包括成多行字符串&lt;/li&gt;
-&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;字符串内建函数&lt;a href=&quot;#字符串内建函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;.capitalize() .upper() .lower() .title()
-.rstrip() .lstrip() .strip()
-len() max() min() find() .rfind()
-.replace(s1,s2,time) .index() ≈ .find()找不到就报错&lt;/p&gt;&lt;p&gt;.split(str=&quot;&quot;,num) 截取num+1个字符串
-.count(str,start=0,end=len(str)) 返回范围内字串出现次数
-.swapcase() 大写转小写，小写转大写&lt;/p&gt;&lt;p&gt;.startswith(substr,start=0,end=len(str)) 检查字符串是否是子串开头
-.endswith(…) 检查字符串是否是子串结尾&lt;/p&gt;&lt;p&gt;.rjust(width,fillchar=”) 原字符串右对齐，填充
-.center(width,fillchar=”) 原字符串居中，填充&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;列表LIST&lt;a href=&quot;#列表list-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;列表比较（import operator）（eq方法）&lt;a href=&quot;#列表比较import-operatoreq方法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;列表函数&amp;amp;方法&lt;a href=&quot;#列表函数方法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;len() max() min() list()&lt;/p&gt;&lt;p&gt;.append() .count(obj) .extend(seq)
-.index(obj) .insert(index,obj) .pop(index=-1)
-.reverse() .clear() .copy() = list[:]
-.sort(key=None,reverse=False) .remove(obj)&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;元组TUPLE&lt;a href=&quot;#元组tuple-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;字符串内建函数&lt;a href=&quot;#字符串内建函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;.capitalize() .upper() .lower() .title()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.rstrip() .lstrip() .strip()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;len() max() min() find() .rfind()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.replace(s1,s2,time) .index() ≈ .find()找不到就报错&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.split(str=&quot;&quot;,num) 截取num+1个字符串&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.count(str,start=0,end=len(str)) 返回范围内字串出现次数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.swapcase() 大写转小写，小写转大写&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.startswith(substr,start=0,end=len(str)) 检查字符串是否是子串开头&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.endswith(…) 检查字符串是否是子串结尾&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.rjust(width,fillchar=”) 原字符串右对齐，填充&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.center(width,fillchar=”) 原字符串居中，填充&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;列表LIST&lt;a href=&quot;#列表list-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;列表比较（import operator）（eq方法，略）&lt;a href=&quot;#列表比较import-operatoreq方法略&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;列表函数&amp;amp;方法&lt;a href=&quot;#列表函数方法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;len() max() min() list()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.append() .count(obj) .extend(seq)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.index(obj) .insert(index,obj) .pop(index=-1)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.reverse() .clear() .copy() = list[:]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.sort(key=None,reverse=False) .remove(obj)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;元组TUPLE&lt;a href=&quot;#元组tuple-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;修改元组是非法的，但可以删除元组&lt;/li&gt;
 &lt;li&gt;但重新初始化元组（实际上是删除后重建）&lt;/li&gt;
-&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;元组内置函数&lt;a href=&quot;#元组内置函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;len() max() min() tuple()&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;字典DICTIONARY&lt;a href=&quot;#字典dictionary&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;元组内置函数&lt;a href=&quot;#元组内置函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;len() max() min() tuple()&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;字典DICTIONARY&lt;a href=&quot;#字典dictionary&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;可以通过 dict[new key] = new value 添加新键值对&lt;/li&gt;
-&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;字典内置函数&amp;amp;方法&lt;a href=&quot;#字典内置函数方法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;len() str() type() dict()&lt;/p&gt;&lt;p&gt;.clear() .copy() .pop() 删除键值对，返回值
-.fromkeys(seq,value=None) 以seq为key，返回一个dict，值是默认值
-.items() .keys() .values() 返回视图对象
-.get(key,default=None) 返回指定键的值，否则返回默认值
-.setdefault(key,default=None) 如果key不存在就添加键，设默认值
-.updata(dict) 把后一个字典加到前一个里面
-.popitem() 删除并返回最后一对键值对&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;集合SET&lt;a href=&quot;#集合set-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;len() .clear() .copy()
-添加元素 .add() .updata(seq)
-移除元素 .remove() （元素不存在则报错）
-.discard() （删除失败不报错） .pop() （随机删除一个元素）&lt;/p&gt;&lt;p&gt;还可以进行集合计算，详细请查文档&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;条件控制&lt;a href=&quot;#条件控制&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;match subject:
-case value1:
-action1
-case value2:
-action2
-case _:
-action3&lt;/p&gt;&lt;p&gt;_ 可以匹配一切，相当于else&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;循环语句&lt;a href=&quot;#循环语句&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;字典内置函数&amp;amp;方法&lt;a href=&quot;#字典内置函数方法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;len() str() type() dict()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.clear() .copy() .pop() 删除键值对，返回值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.fromkeys(seq,value=None) 以seq为key，返回一个dict，值是默认值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.items() .keys() .values() 返回视图对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.get(key,default=None) 返回指定键的值，否则返回默认值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.setdefault(key,default=None) 如果key不存在就添加键，设默认值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.updata(dict) 把后一个字典加到前一个里面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.popitem() 删除并返回最后一对键值对&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;集合SET&lt;a href=&quot;#集合set-1&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;len() .clear() .copy()&lt;/li&gt;
+&lt;li&gt;添加元素 .add() .updata(seq)&lt;/li&gt;
+&lt;li&gt;移除元素 .remove() （元素不存在则报错）&lt;/li&gt;
+&lt;li&gt;.discard() （删除失败不报错） .pop() （随机删除一个元素）&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;还可以进行集合计算，详细请查文档&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;条件控制&lt;a href=&quot;#条件控制&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;match&lt;/span&gt;&lt;span&gt; subject:&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;     &lt;/span&gt;&lt;span&gt;case&lt;/span&gt;&lt;span&gt; value1:&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;          &lt;/span&gt;&lt;/span&gt;&lt;span&gt;action1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;     &lt;/span&gt;&lt;span&gt;case&lt;/span&gt;&lt;span&gt; value2:&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;          &lt;/span&gt;&lt;/span&gt;&lt;span&gt;action2&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;     &lt;/span&gt;&lt;span&gt;case&lt;/span&gt;&lt;span&gt; _:&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;          &lt;/span&gt;&lt;/span&gt;&lt;span&gt;action3&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;span&gt;_ 可以匹配一切，相当于else&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;循环语句&lt;a href=&quot;#循环语句&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;pass语句可以作占位语句&lt;/li&gt;
 &lt;li&gt;循环的else语句只有在循环正常结束后才能执行，break结束不执行&lt;/li&gt;
-&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;推导式&lt;a href=&quot;#推导式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;[表达式 for 变量 in 可迭代 if 条件] 返回值是列表
-{key for 变量 in 可迭代 if 条件} 返回值是字典
-{value for 变量 in 可迭代 if 条件} 返回值是集合
-(表达式 for 变量 in 可迭代 if 条件) 返回值是元组&lt;/p&gt;&lt;p&gt;推导式中变量的数量不必须为 1&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;迭代器&lt;a href=&quot;#迭代器&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;iter(seq) 返回迭代器对象
-next(迭代器) 输出迭代器的下一个元素&lt;/p&gt;&lt;section&gt;&lt;h3&gt;创建一个迭代器&lt;a href=&quot;#创建一个迭代器&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;推导式&lt;a href=&quot;#推导式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[表达式 for 变量 in 可迭代 if 条件] 返回值是列表&lt;/li&gt;
+&lt;li&gt;{key for 变量 in 可迭代 if 条件} 返回值是字典&lt;/li&gt;
+&lt;li&gt;{value for 变量 in 可迭代 if 条件} 返回值是集合&lt;/li&gt;
+&lt;li&gt;(表达式 for 变量 in 可迭代 if 条件) 返回值是元组&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;推导式中变量的数量不必须为 1&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;迭代器&lt;a href=&quot;#迭代器&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;iter(seq) 返回迭代器对象&lt;/li&gt;
+&lt;li&gt;next(迭代器) 输出迭代器的下一个元素&lt;/li&gt;
+&lt;/ul&gt;&lt;section&gt;&lt;h3&gt;创建一个迭代器&lt;a href=&quot;#创建一个迭代器&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;面向对象中，存在__iter__和__next__两个魔法方法，可以用来创建迭代器对象，在__next__里可以设置&lt;/li&gt;
 &lt;li&gt;raise StopIteration触发异常来结束迭代。&lt;/li&gt;
 &lt;li&gt;使用了yield的函数称为生成器，每次函数运行到yield关键词的一行时，会直接返回其后的表达式的值，再次执行该函数时，会从yield的下一行开始运行&lt;/li&gt;
@@ -124,25 +208,32 @@ next(迭代器) 输出迭代器的下一个元素&lt;/p&gt;&lt;section&gt;&lt;h3
 &lt;li&gt;dir(模块) 可以查看模块定义内的所有名称&lt;/li&gt;
 &lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;文件方法&lt;a href=&quot;#文件方法&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;读写文件的模式有 r只读 w只写 a追加 b二进制模式 +可读可写（一般就用rwa r+w+a+）&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;.close() 关闭
-.write(str) 写入（返回字符串长度）
-.tell() 返回文件指针的位置
-.flush() 立刻把缓存区的数据写入文件
-.isatty() 文件是否连接到一个终端设备
-.read(n) 读取指定 n 个字节数
-.readline 读取整行，包括 \n
-.readlines 读取所有行返回列表，每行一个列表元素
-.seek() 移动指针，
-- 第一参数为偏移量，前移正，后移负
-- 第二参数为位置，0开头，1当前，2末尾
-.writelines() 写入多行/列表（需要自己加换行）&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;OS（import os）&lt;a href=&quot;#osimport-os&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;os.getcwd() 返回当前工作目录
-os.chdir(path) 改变当前工作目录
-os.listdir(path) 列出目录内容
-os.mkdir(name) 创建一个新目录
-os.rmmir(path) 删除一个空目录，目录不空报错
-os.system() 执行shell命令
-os.getenv(var) 获取指定的环境变量，不存在返回None
-os.rename(path,new_path) 重命名/移动文件&lt;/p&gt;&lt;p&gt;…&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;错误处理&lt;a href=&quot;#错误处理&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;/ol&gt;&lt;ul&gt;
+&lt;li&gt;.close() 关闭&lt;/li&gt;
+&lt;li&gt;.write(str) 写入（返回字符串长度）&lt;/li&gt;
+&lt;li&gt;.tell() 返回文件指针的位置&lt;/li&gt;
+&lt;li&gt;.flush() 立刻把缓存区的数据写入文件&lt;/li&gt;
+&lt;li&gt;.isatty() 文件是否连接到一个终端设备&lt;/li&gt;
+&lt;li&gt;.read(n) 读取指定 n 个字节数&lt;/li&gt;
+&lt;li&gt;.readline 读取整行，包括 \n&lt;/li&gt;
+&lt;li&gt;.readlines 读取所有行返回列表，每行一个列表元素&lt;/li&gt;
+&lt;li&gt;.seek() 移动指针，
+&lt;ul&gt;
+&lt;li&gt;第一参数为偏移量，前移正，后移负&lt;/li&gt;
+&lt;li&gt;第二参数为位置，0开头，1当前，2末尾&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.writelines() 写入多行/列表（需要自己加换行）&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;OS（import os）&lt;a href=&quot;#osimport-os&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;os.getcwd() 返回当前工作目录&lt;/li&gt;
+&lt;li&gt;os.chdir(path) 改变当前工作目录&lt;/li&gt;
+&lt;li&gt;os.listdir(path) 列出目录内容&lt;/li&gt;
+&lt;li&gt;os.mkdir(name) 创建一个新目录&lt;/li&gt;
+&lt;li&gt;os.rmmir(path) 删除一个空目录，目录不空报错&lt;/li&gt;
+&lt;li&gt;os.system() 执行shell命令&lt;/li&gt;
+&lt;li&gt;os.getenv(var) 获取指定的环境变量，不存在返回None&lt;/li&gt;
+&lt;li&gt;os.rename(path,new_path) 重命名/移动文件&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;…&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;错误处理&lt;a href=&quot;#错误处理&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;try: … except: … else: … finally: …
 &lt;ul&gt;
 &lt;li&gt;先执行try，如果没有异常则跳过except，反之运行except&lt;/li&gt;
@@ -157,9 +248,163 @@ os.rename(path,new_path) 重命名/移动文件&lt;/p&gt;&lt;p&gt;…&lt;/p&gt;&
 &lt;li&gt;在类内部 方法外部的 变量是属于所有类的&lt;/li&gt;
 &lt;li&gt;在init方法 内部的变量是属于 该类自己的&lt;/li&gt;
 &lt;li&gt;变量以 __开头，意味着变量私有化&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;__init__构造函数，生成时调用
-__del__析构函数，释放时调用
-__len__获得长度 __setitem__按索引赋值 __getitem__按照索引获取值
-__call__函数调用(像函数一样被调用时)
-__mod__求余运算 __pow__乘方运算
-__add__加运算 __sub__减运算 __mul__乘运算 __truediv__除运算&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item></channel></rss>
+&lt;/ol&gt;&lt;ul&gt;
+&lt;li&gt;__init__构造函数，生成时调用&lt;/li&gt;
+&lt;li&gt;__del__析构函数，释放时调用&lt;/li&gt;
+&lt;li&gt;__len__获得长度 __setitem__按索引赋值 __getitem__按照索引获取值&lt;/li&gt;
+&lt;li&gt;__call__函数调用(像函数一样被调用时)&lt;/li&gt;
+&lt;li&gt;__mod__求余运算 __pow__乘方运算&lt;/li&gt;
+&lt;li&gt;__add__加运算 __sub__减运算 __mul__乘运算 __truediv__除运算&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>Numpy基本语法</title><link>https://firefly.cuteleaf.cn/posts/numpy/</link><guid isPermaLink="true">https://firefly.cuteleaf.cn/posts/numpy/</guid><description>依旧是仅供参考的Numpy基础语法，主要作用是提醒</description><pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;NUMPY 入门笔记&lt;a href=&quot;#numpy-入门笔记&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;跟着视频做的，依旧不具备任何学习价值，只是提醒一下&lt;/p&gt;&lt;section&gt;&lt;h2&gt;Ndarray&lt;a href=&quot;#ndarray&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持0-2以及更高维的数组，但一般只用1-2维，一般配合Pandas库进行数据分析&lt;/li&gt;
+&lt;li&gt;内存数据类型必须一致，如果创建时数据类型不同，则会强制转换&lt;/li&gt;
+&lt;li&gt;基于连续的内存块存储&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Ndarray的属性&lt;a href=&quot;#ndarray的属性&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;arr.shape    形状&lt;/li&gt;
+&lt;li&gt;arr.ndim     维度数&lt;/li&gt;
+&lt;li&gt;arr.size     总元素数目&lt;/li&gt;
+&lt;li&gt;arr.dtype    数组类型&lt;/li&gt;
+&lt;li&gt;arr.T        转置&lt;/li&gt;
+&lt;li&gt;arr.itemsize 每个元素占用的内存字节数&lt;/li&gt;
+&lt;li&gt;arr.nbytes   数组总内存占用量&lt;/li&gt;
+&lt;li&gt;arr.flags    内存储存方式是否为连续&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Ndarray的创建&lt;a href=&quot;#ndarray的创建&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;np.array()   基础创建&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.copy(arr) 复制一个数组&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.zeros(shape)  预定义形状，全0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.ones(shape)   全1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.empty(shape)  全空（随机填）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.zeros_like(arr)&lt;/li&gt;
+&lt;li&gt;.ones_like(arr)&lt;/li&gt;
+&lt;li&gt;.empty_like(arr)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.full(shape,var)   预定义形状和值，无值报错&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.arange(start, end, step)  默认生成 1 维&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.linspace(start, end, num) 同上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.logspace(start, end, step, base=10)   生成一列对数间隔数列，依次取不同幂数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.eye(边长/行,列 axis=0)   生成单位矩阵&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.diag([主对角线上的数字])  生成对角矩阵&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.random.rand(行,列)   0-1的随机数组&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.random.uniform(a, b, shape)  指定范围内的随机数组&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.random.randint(a, b, shape)  指定范围内的随机整数组&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.random.randn(shape)   正态分布概率随机数组&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.random.seed()    设置种子&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Ndarray的数据类型&lt;a href=&quot;#ndarray的数据类型&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;bool，int8-64，unint8-64，float16-64，complex64-128&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Ndarray的索引和切片&lt;a href=&quot;#ndarray的索引和切片&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;arr[:][:] 和 arr[: , :]&lt;/li&gt;
+&lt;li&gt;arr[expression] 布尔索引
+&lt;ul&gt;
+&lt;li&gt;通过表达式来索引，针对全数组，返回一个一维数组&lt;/li&gt;
+&lt;li&gt;支持&amp;amp; |等逻辑运算符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Ndarray运算&lt;a href=&quot;#ndarray运算&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;shape相同的arr支持所有算术运算，结果是对应位置的数字进行计算&lt;/li&gt;
+&lt;li&gt;arr和标量支持所有算术运算，结果是所有位置的数字与标量进行计算&lt;/li&gt;
+&lt;/ol&gt;&lt;section&gt;&lt;h3&gt;广播机制&lt;a href=&quot;#广播机制&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;把要运算的数组的shape列出来，每一维度如果满足下面两个条件之一&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;两个数组该维度的大小相等&lt;/li&gt;
+&lt;li&gt;某个数组在该维度的大小为 1
+就可以触发广播机制，即使shape不同，也可支持算术运算
+（广播机制实际上涵盖了shape相同的情况）&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;Ndarray常用函数&lt;a href=&quot;#ndarray常用函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;基本数学函数&lt;a href=&quot;#基本数学函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;np.sqrt(arr)     返回平方根计算后的数组&lt;/li&gt;
+&lt;li&gt;np.exp(arr)      返回e^x计算后的数组&lt;/li&gt;
+&lt;li&gt;np.log()         返回ln计算后的数组（类似还有log10，log2）&lt;/li&gt;
+&lt;li&gt;np.sin()         返回sin计算后的数组（类似还有cos，tan）&lt;/li&gt;
+&lt;li&gt;np.abs()         返回取绝对值之后的数组&lt;/li&gt;
+&lt;li&gt;np.power(a,b)
+&lt;ul&gt;
+&lt;li&gt;数组+标量，可以直接计算&lt;/li&gt;
+&lt;li&gt;数组+数组，满足广播机制才可以&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;np.round(arr,n)  返回四舍五入n位后的数组&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;统计函数&lt;a href=&quot;#统计函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;np.sum(arr)      求和，全体&lt;/li&gt;
+&lt;li&gt;np.mean()        同上，但求平均值&lt;/li&gt;
+&lt;li&gt;np.median(arr)   求中位数&lt;/li&gt;
+&lt;li&gt;np.std(arr)      求标准差&lt;/li&gt;
+&lt;li&gt;np.var(arr)      求方差&lt;/li&gt;
+&lt;li&gt;np.min(arr)      求最小&lt;/li&gt;
+&lt;li&gt;np.max(arr)      求最大&lt;/li&gt;
+&lt;li&gt;np.percentile()  求分位数
+&lt;ul&gt;
+&lt;li&gt;以上函数都有axis参数&lt;/li&gt;
+&lt;li&gt;axis = 0按列进行操作，= 1按行进行操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;比较函数&lt;a href=&quot;#比较函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;np.greater(arr,b)          返回 值 是 是否大于num的数组&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;np.less()np.equql()同上用法&lt;/li&gt;
+&lt;li&gt;b 可以为数组，但要满足广播机制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.logical_and(arr,b)      返回逻辑计算后的数组（机制同上）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;np.logical_or() 用法同上&lt;/li&gt;
+&lt;li&gt;b 机制也同上&lt;/li&gt;
+&lt;li&gt;np.logical_not(arr) 也是逻辑计算后，单只要一个数组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.where(expression,T,F)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;expression为真，则从T里边取值，反之从F中取值&lt;/li&gt;
+&lt;li&gt;基本用法是，令T为arr，取arr中相应位置的值，F为0，表示不符合&lt;/li&gt;
+&lt;li&gt;可嵌套&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;np.select([exp1,exp2…],[val1,val2…])&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;效果类似上边，只不过只定义了为真的情况，所以尽量把条件覆盖全面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;排序函数&lt;a href=&quot;#排序函数&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;arr.sort() 在原数组上排序 / np.sort(arr) 返回排序后的数组&lt;/li&gt;
+&lt;li&gt;np.argsort(arr)  返回 值为排序后的索引 的数组&lt;/li&gt;
+&lt;li&gt;np.unique(arr)   返回 去重后排序的 数组&lt;/li&gt;
+&lt;li&gt;np.split(arr,n)  返回 n 个由 arr 分割出来的数组，一定要整除
+&lt;ul&gt;
+&lt;li&gt;n 可以为 [n1,n2…] 表示切割处的索引，在该索引前隔开&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;np.reshape(arr,shape)    重新塑形&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item></channel></rss>
