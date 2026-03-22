@@ -3,12 +3,12 @@ title: Python基础语法
 published: 2026-03-22
 description: '记录了一些我不太熟悉的基础知识，不太适合学习，主要起到一个提示作用'
 image: ''
-tags: [Hello-World]
+tags: [Python]
 category: '基础入门'
 draft: false 
 lang: ''
 ---
-# PYTHON
+# PYTHON 入门笔记
 
 跟着菜鸟教程学的
 
@@ -73,33 +73,33 @@ lang: ''
 
 ### 类型转换函数
 
-int(x,base=10) float(x) complex(real, imag)
-str(x) repr(x) eval(str) tuple(seq) list(seq)
-set() dict() 
-frozenset() 不可变集合 chr() 字符
-ord() 十 hex() 十六 oct() 八
+ - int(x,base=10) float(x) complex(real, imag)
+ - str(x) repr(x) eval(str) tuple(seq) list(seq)
+ - set() dict() 
+ - frozenset() 不可变集合 chr() 字符
+ - ord() 十 hex() 十六 oct() 八
 
 ## 数字NUMBER
 
 ### import math（math.略）
 
-abs(i) fabs(f) pow(x,y) exp(x) round(x,n)
-max() min() log(x,a = e) log10(x) sqrt()
-modf(f) = 整数:小数 floor(x)向下取整 ceil(x)向上取整
+ - abs(i) fabs(f) pow(x,y) exp(x) round(x,n)
+ - max() min() log(x,a = e) log10(x) sqrt()
+ - modf(f) = 整数:小数 floor(x)向下取整 ceil(x)向上取整
 
-acos() asin() atan() sin() cos() tan()
-degree() 弧度换角度 radians() 角度换弧度
-hypot(x,y) = sqrt(x² + y²)
+ - acos() asin() atan() sin() cos() tan()
+ - degree() 弧度换角度 radians() 角度换弧度
+ - hypot(x,y) = sqrt(x² + y²)
 
-pi e
+ - pi e 两个特殊值，也要加 math. 前缀
 
 
 ### import random（random.略）
 
-random() [0,1) uniform(x,y) [x,y] seed() 
-shuffle(seq) 随机排序原序列 
-choice(seq) 从序列中随机挑选一个元素
-randrange(start,stop,step) 在范围内获取一个随机数
+ - random() [0,1) uniform(x,y) [x,y] seed() 
+ - shuffle(seq) 随机排序原序列 
+ - choice(seq) 从序列中随机挑选一个元素
+ - randrange(start,stop,step) 在范围内获取一个随机数
 
 ## 字符串STRING
 
@@ -109,33 +109,33 @@ randrange(start,stop,step) 在范围内获取一个随机数
 
 ### 字符串内建函数
 
-.capitalize() .upper() .lower() .title()
-.rstrip() .lstrip() .strip()
-len() max() min() find() .rfind() 
-.replace(s1,s2,time) .index() ≈ .find()找不到就报错
+ - .capitalize() .upper() .lower() .title()
+ - .rstrip() .lstrip() .strip()
+ - len() max() min() find() .rfind() 
+ - .replace(s1,s2,time) .index() ≈ .find()找不到就报错
 
-.split(str="",num) 截取num+1个字符串
-.count(str,start=0,end=len(str)) 返回范围内字串出现次数
-.swapcase() 大写转小写，小写转大写
+ - .split(str="",num) 截取num+1个字符串
+ - .count(str,start=0,end=len(str)) 返回范围内字串出现次数
+ - .swapcase() 大写转小写，小写转大写
 
-.startswith(substr,start=0,end=len(str)) 检查字符串是否是子串开头
-.endswith(...) 检查字符串是否是子串结尾
+ - .startswith(substr,start=0,end=len(str)) 检查字符串是否是子串开头
+ - .endswith(...) 检查字符串是否是子串结尾
 
-.rjust(width,fillchar='') 原字符串右对齐，填充<sp>
-.center(width,fillchar='') 原字符串居中，填充<sp>
+ - .rjust(width,fillchar='') 原字符串右对齐，填充<sp>
+ - .center(width,fillchar='') 原字符串居中，填充<sp>
 
 ## 列表LIST
 
-### 列表比较（import operator）（eq方法）
+### 列表比较（import operator）（eq方法，略）
 
 ### 列表函数&方法
 
-len() max() min() list()
+ - len() max() min() list()
 
-.append() .count(obj) .extend(seq)
-.index(obj) .insert(index,obj) .pop(index=-1)
-.reverse() .clear() .copy() = list[:] 
-.sort(key=None,reverse=False) .remove(obj)
+ - .append() .count(obj) .extend(seq)
+ - .index(obj) .insert(index,obj) .pop(index=-1)
+ - .reverse() .clear() .copy() = list[:] 
+ - .sort(key=None,reverse=False) .remove(obj)
 
 ## 元组TUPLE
 
@@ -144,7 +144,7 @@ len() max() min() list()
 
 ### 元组内置函数
 
-len() max() min() tuple()
+ - len() max() min() tuple()
 
 ## 字典DICTIONARY
 
@@ -152,27 +152,28 @@ len() max() min() tuple()
 
 ### 字典内置函数&方法
 
-len() str() type() dict()
+ - len() str() type() dict()
 
-.clear() .copy() .pop() 删除键值对，返回值
-.fromkeys(seq,value=None) 以seq为key，返回一个dict，值是默认值
-.items() .keys() .values() 返回视图对象 
-.get(key,default=None) 返回指定键的值，否则返回默认值
-.setdefault(key,default=None) 如果key不存在就添加键，设默认值
-.updata(dict) 把后一个字典加到前一个里面
-.popitem() 删除并返回最后一对键值对
+ - .clear() .copy() .pop() 删除键值对，返回值
+ - .fromkeys(seq,value=None) 以seq为key，返回一个dict，值是默认值
+ - .items() .keys() .values() 返回视图对象 
+ - .get(key,default=None) 返回指定键的值，否则返回默认值
+ - .setdefault(key,default=None) 如果key不存在就添加键，设默认值
+ - .updata(dict) 把后一个字典加到前一个里面
+ - .popitem() 删除并返回最后一对键值对
 
 ## 集合SET
 
-len() .clear() .copy()
-添加元素 .add() .updata(seq) 
-移除元素 .remove() （元素不存在则报错）
-.discard() （删除失败不报错） .pop() （随机删除一个元素）
+ - len() .clear() .copy()
+ - 添加元素 .add() .updata(seq) 
+ - 移除元素 .remove() （元素不存在则报错）
+ - .discard() （删除失败不报错） .pop() （随机删除一个元素）
 
 还可以进行集合计算，详细请查文档
 
 ## 条件控制
 
+```python
 match subject:
      case value1:
           action1
@@ -182,6 +183,7 @@ match subject:
           action3
 
  _ 可以匹配一切，相当于else
+```
 
 ## 循环语句
 
@@ -190,17 +192,17 @@ match subject:
 
 ## 推导式
 
-[表达式 for 变量 in 可迭代 if 条件] 返回值是列表
-{key:value for 变量 in 可迭代 if 条件} 返回值是字典
-{value for 变量 in 可迭代 if 条件} 返回值是集合
-(表达式 for 变量 in 可迭代 if 条件) 返回值是元组
+ - [表达式 for 变量 in 可迭代 if 条件] 返回值是列表
+ - {key:value for 变量 in 可迭代 if 条件} 返回值是字典
+ - {value for 变量 in 可迭代 if 条件} 返回值是集合
+ - (表达式 for 变量 in 可迭代 if 条件) 返回值是元组
 
 推导式中变量的数量不必须为 1 
 
 ## 迭代器
 
-iter(seq) 返回迭代器对象
-next(迭代器) 输出迭代器的下一个元素
+ - iter(seq) 返回迭代器对象
+ - next(迭代器) 输出迭代器的下一个元素
 
 ### 创建一个迭代器
 
@@ -242,29 +244,29 @@ next(迭代器) 输出迭代器的下一个元素
 
 1. 读写文件的模式有 r只读 w只写 a追加 b二进制模式 +可读可写（一般就用rwa r+w+a+）
 
-.close() 关闭 
-.write(str) 写入（返回字符串长度）
-.tell() 返回文件指针的位置
-.flush() 立刻把缓存区的数据写入文件
-.isatty() 文件是否连接到一个终端设备
-.read(n) 读取指定 n 个字节数
-.readline 读取整行，包括 \n
-.readlines 读取所有行返回列表，每行一个列表元素
-.seek() 移动指针，
+ - .close() 关闭 
+ - .write(str) 写入（返回字符串长度）
+ - .tell() 返回文件指针的位置
+ - .flush() 立刻把缓存区的数据写入文件
+ - .isatty() 文件是否连接到一个终端设备
+ - .read(n) 读取指定 n 个字节数
+ - .readline 读取整行，包括 \n
+ - .readlines 读取所有行返回列表，每行一个列表元素
+ - .seek() 移动指针，
       - 第一参数为偏移量，前移正，后移负
       - 第二参数为位置，0开头，1当前，2末尾
-.writelines() 写入多行/列表（需要自己加换行）
+ - .writelines() 写入多行/列表（需要自己加换行）
 
 ## OS（import os）
 
-os.getcwd() 返回当前工作目录
-os.chdir(path) 改变当前工作目录
-os.listdir(path) 列出目录内容
-os.mkdir(name) 创建一个新目录
-os.rmmir(path) 删除一个空目录，目录不空报错
-os.system() 执行shell命令
-os.getenv(var) 获取指定的环境变量，不存在返回None
-os.rename(path,new_path) 重命名/移动文件
+ - os.getcwd() 返回当前工作目录
+ - os.chdir(path) 改变当前工作目录
+ - os.listdir(path) 列出目录内容
+ - os.mkdir(name) 创建一个新目录
+ - os.rmmir(path) 删除一个空目录，目录不空报错
+ - os.system() 执行shell命令
+ - os.getenv(var) 获取指定的环境变量，不存在返回None
+ - os.rename(path,new_path) 重命名/移动文件
 
 ...
 
@@ -284,9 +286,9 @@ os.rename(path,new_path) 重命名/移动文件
 2. 在init方法 内部的变量是属于 该类自己的
 3. 变量以 __开头，意味着变量私有化
 
-__init__构造函数，生成时调用
-__del__析构函数，释放时调用
-__len__获得长度 __setitem__按索引赋值 __getitem__按照索引获取值
-__call__函数调用(像函数一样被调用时)
-__mod__求余运算 __pow__乘方运算
-__add__加运算 __sub__减运算 __mul__乘运算 __truediv__除运算
+ - __init__构造函数，生成时调用
+ - __del__析构函数，释放时调用
+ - __len__获得长度 __setitem__按索引赋值 __getitem__按照索引获取值
+ - __call__函数调用(像函数一样被调用时)
+ - __mod__求余运算 __pow__乘方运算
+ - __add__加运算 __sub__减运算 __mul__乘运算 __truediv__除运算
