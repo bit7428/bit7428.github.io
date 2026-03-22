@@ -4,7 +4,7 @@ published: 2026-03-22
 description: '依旧是仅供参考的Numpy基础语法，主要作用是提醒'
 image: ''
 tags: [Python,机器学习,数据分析,Numpy]
-category: '基础人们'
+category: '基础入门'
 draft: false 
 lang: ''
 ---
