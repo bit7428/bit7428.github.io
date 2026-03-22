@@ -1,4 +1,122 @@
-User-agent: *
-Disallow: /_astro/
+# ==============================================
+# Firefly 博客专属 robots.txt 配置
+# 功能：拦截AI爬虫/恶意爬虫，规范搜索引擎抓取，避免重复收录
+# 更新：补充国内主流AI模型爬虫拦截，保留搜索引擎收录权限
+# ==============================================
 
-Sitemap: https://firefly.cuteleaf.cn/sitemap-index.xml
+# ------------------------------
+# 1. 拦截国外AI大模型爬虫（禁止抓取内容用于训练）
+# ------------------------------
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-3-Haiku
+Disallow: /
+User-agent: Claude-3-Opus
+Disallow: /
+User-agent: Claude-3-Sonnet
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+
+# ------------------------------
+# 2. 拦截国内主流AI大模型爬虫
+# （包含你提到的豆包、千问、DeepSeek、腾讯元宝、文心一言）
+# ------------------------------
+# 字节跳动：豆包
+User-agent: Bytespider
+Disallow: /
+User-agent: Bytedance
+Disallow: /
+User-agent: Doubao
+Disallow: /
+
+# 深度求索：DeepSeek
+User-agent: DeepSeekBot
+Disallow: /
+User-agent: deepseek
+Disallow: /
+
+# 阿里：通义千问
+User-agent: Qwenbot
+Disallow: /
+User-agent: PetalBot
+Disallow: /
+
+# 百度：文心一言（注意：仅拦截AI爬虫，百度搜索爬虫Baiduspider保留允许）
+User-agent: Baidubot
+Disallow: /
+
+# 腾讯：腾讯元宝/混元
+User-agent: Hunyuan
+Disallow: /
+User-agent: TencentBot
+Disallow: /
+
+# 智谱AI：ChatGLM
+User-agent: ChatGLM-Spider
+Disallow: /
+User-agent: ChatGLM
+Disallow: /
+
+# 月之暗面：Kimi
+User-agent: Kimi
+Disallow: /
+User-agent: Moonshot
+Disallow: /
+
+# 华为：盘古大模型
+User-agent: PanguBot
+Disallow: /
+
+# 零一万物
+User-agent: YiBot
+Disallow: /
+
+# MiniMax
+User-agent: MiniMaxBot
+Disallow: /
+
+# 书生大模型
+User-agent: InternLMBot
+Disallow: /
+
+# ------------------------------
+# 3. 拦截通用爬虫框架
+# ------------------------------
+User-agent: Scrapy
+Disallow: /
+
+# ------------------------------
+# 4. 通用规则：对所有正常搜索引擎生效
+# （百度搜索、谷歌搜索、必应搜索等正常爬虫会遵循此规则）
+# ------------------------------
+User-agent: *
+# 禁止抓取敏感/重复路径（避免搜索引擎收录重复内容）
+Disallow: /private/          # 私有文章目录
+Disallow: /draft/            # 草稿目录
+Disallow: /tags/             # 标签聚合页（如需收录可删除此行）
+Disallow: /categories/       # 分类聚合页（如需收录可删除此行）
+Disallow: /archive/          # 归档页（如需收录可删除此行）
+
+# 禁止抓取带统计参数的重复页面（避免utm参数导致的重复索引）
+Disallow: /*?utm_*
+
+# 禁止抓取临时/日志文件
+Disallow: /*.tmp$
+Disallow: /*.log$
+
+# ------------------------------
+# 5. 网站地图（引导搜索引擎抓取）
+# ------------------------------
+# 请把下面的域名替换成你自己的博客域名！
+Sitemap: https://bit7428.github.io
