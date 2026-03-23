@@ -26,7 +26,7 @@ export const friendsConfig: FriendLink[] = [
 		title: "伤心雪猫",
 		imgurl: "https://sadsnowcat.github.io/images/sadsnowcat.jpg",
 		desc: "古老传说中的雪豹仙人，现在的雪猫大师",
-		siteurl: "https://sadsnowcat.github.io"
+		siteurl: "https://sadsnowcat.github.io",
 		tags: ["Blog"],
 		weight: 3, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
