@@ -12,6 +12,7 @@ lang: ''
 
 ## **基本语法**
 
+```cpp
 1. using namespace std;     请输入文本
 
 2. <cstdio>     继承 C 的意志
@@ -74,6 +75,7 @@ lang: ''
 
 8. <algorithm>  ...请输入文本
      - sort() find() max() min() reverse() count() swap() binary_search()...
+```
 
 ## **——冥——想——**
 
