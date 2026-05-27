@@ -7,26 +7,25 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "Citlali@Official's Blog",
+	title: "3K1YON's Blog",
 
 	// 站点副标题
-	subtitle: "茜特菈莉的小窝",
+	subtitle: "养茜特菈莉的小窝~",
 
 	// 站点 URL
 	site_url: "https://firefly.cuteleaf.cn",
 
 	// 站点描述
 	description:
-		"如果茜特菈莉还没准备好的话，就先让我来记住茜特菈莉吧。",
+		"一个技术低客的个人博客，记录一些学习笔记。就算明天没得吃，今天也要吃蛋糕！",
 
 	// 站点关键词
 	keywords: [
-		"是你奶奶",
-		"茜特菈莉",
-		"老酸奶",
 		"Genshin Inpact",
 		"mihoyo",
 		"Citlali",
+		"3K1YON",
+		"Personal Blog",
 	],
 
 	// 主题色

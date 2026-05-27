@@ -28,7 +28,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "古老传说中的雪豹仙人，现在的雪猫大师",
 		siteurl: "https://sadsnowcat.github.io",
 		tags: ["Blog"],
-		weight: 3, // 权重，数字越大排序越靠前
+		weight: 0, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
 	},
 	{
@@ -37,8 +37,8 @@ export const friendsConfig: FriendLink[] = [
 		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
 		siteurl: "https://blog.cuteleaf.cn",
 		tags: ["Blog"],
-		weight: 2, // 权重，数字越大排序越靠前
-		enabled: true, // 是否启用
+		weight: 0, // 权重，数字越大排序越靠前
+		enabled: false, // 是否启用
 	},
 	{
 		title: "Firefly Docs",
@@ -46,8 +46,8 @@ export const friendsConfig: FriendLink[] = [
 		desc: "Firefly主题模板文档",
 		siteurl: "https://docs-firefly.cuteleaf.cn",
 		tags: ["Docs"],
-		weight: 1,
-		enabled: true,
+		weight: 0,
+		enabled: false,
 	},
 	{
 		title: "Astro",
@@ -56,7 +56,7 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://github.com/withastro/astro",
 		tags: ["Framework"],
 		weight: 0,
-		enabled: true,
+		enabled: false,
 	},
 ];
 

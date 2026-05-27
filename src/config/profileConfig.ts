@@ -9,10 +9,10 @@ export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.avif",
 
 	// 名字
-	name: "Citlali@Official",
+	name: "<3K1YON>",
 
 	// 个人签名
-	bio: "谜烟流彩，曜石映心.",
+	bio: "就算明天没得吃，今天也要吃蛋糕。",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
